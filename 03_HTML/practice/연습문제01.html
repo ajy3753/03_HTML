@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>연습문제 01</title>
+</head>
+<body>
+   <form action="order.kh" method="get">
+      고객명 : <input type="text" name="name"><br><br>
+      전화번호 : <input type="tel" name="phone"><br><br>
+      E-mail : <input type="email" name="email"><br><br>
+
+      <br><hr><br>
+
+      <fieldset>
+         <legend>피자 사이즈</legend>
+
+         <input type="radio" name="pizzaSize" id="small" value="small">
+         <label for="small">Small</label>
+         <br><br>
+
+         <input type="radio" name="pizzaSize" id="medium" value="medium">
+         <label for="medium">Medium</label>
+         <br><br>
+
+         <input type="radio" name="pizzaSize" id="large" value="large">
+         <label for="large">Large</label>
+         <br><br>
+      </fieldset>
+
+      <br><br>
+
+      <fieldset>
+         <legend>토핑 선택</legend>
+         <input type="checkbox" name="pizzaTopping" id="bacon" value="베이컨">
+         <label for="bacon">베이컨</label>
+         <br><br>
+
+         <input type="checkbox" name="pizzaTopping" id="cheese" value="치즈">
+         <label for="cheese">치즈</label>
+         <br><br>
+
+         <input type="checkbox" name="pizzaTopping" id="onion" value="양파">
+         <label for="onion">양파</label>
+         <br><br>
+
+         <input type="checkbox" name="pizzaTopping" id="mushroom" value="버섯">
+         <label for="mushroom">버섯</label>
+         <br><br>
+      </fieldset>
+
+      <br><hr><br>
+
+      희망 배송 시간 : <input type="time" name="deliveryTime">
+      <br><br>
+
+      배송 시 요청사항 : <textarea name="deliveryRequest"></textarea>
+      <br><br>
+
+      <input type="submit" value="주문하기">
+      <br><br>
+   </form>
+</body>
+</html>
